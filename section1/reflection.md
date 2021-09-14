@@ -39,5 +39,5 @@ you can do gets.chomp if you want the answer written in the same line as the nex
 
 1. Name and describe two common string methods:
 
-1. Get the length of a string
-2. reverse a string 
+1. .length
+2. .split
