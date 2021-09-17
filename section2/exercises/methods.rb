@@ -4,7 +4,7 @@
 # `ruby section2/exercises/methods.rb`
 
 # Example: Write a method that when called will print your name:
-def print_name
+def puts_name
   p "Severus Snape"
 end
 
@@ -52,9 +52,6 @@ meet_greet("Melissa" , "Rachel")
 
 # Look at the code you wrote for the previous YOU DO🎈 - what did you name the function, and why?
 # What did you name each parameter, and why?
-
-
-
 # EXPLAIN:
 
 # I labelled the sum of two numbers "numsum" because the only function it does is
