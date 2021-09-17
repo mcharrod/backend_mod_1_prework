@@ -111,6 +111,26 @@ puts email.values.join("\n\n ")
 
 # Check out the following example of an array of Instagram posts:
 
+posts = [
+ {
+   'image_src' => "./images/beach.png",
+   'caption' => "At the beach with my besties",
+   'timestamp' => "4:37 PM August 13, 2019",
+   'number_likes' => 0,
+   'comments' => []
+ },
+ {
+   'image_src' => "./images/holiday-party.png",
+   'caption' => "What a great holiday party omg",
+   'timestamp' => "11:37 PM December 31, 2019",
+   'number_likes' => 13,
+   'comments' => []
+ }
+]
+
+puts posts
+puts posts[0]
+
 
 # posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"];
 
