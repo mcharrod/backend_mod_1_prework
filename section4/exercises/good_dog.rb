@@ -49,6 +49,12 @@ class GoodDog
     "#{name} says arf!"
   end
 
+  # def change_info(n, h, w)
+  #   self.name = n
+  #   self.height = h
+  #   self.weight = w
+  # end
+
   def change_info(n, h, w)
     @name = n
     @height = h
@@ -85,35 +91,30 @@ fido = GoodDog.new("Fido", "18 inches", "15 lbs")
 puts fido.speak
 
 
+class Dog
+  def name=(n)
+    @name = n
+    "Laddieboy"
+  end
+end
 
-# class Dog
-#   def name=(n)
-#     @name = n
-#     "Laddieboy"
-#   end
-# end
-#
-# sparky = Dog.new()
-# puts(sparky.name = "Sparky")
+sparky = Dog.new()
+puts(sparky.name = "Sparky")
 
+class Human
+  def initialize(name)
+    @name = name
+    puts "You can use .new to call the initialize method?! Thats wild"
+    puts "You can reuse the initialize method name bc it's a specific sequence I guess"
+  end
+  def print_name
+    @name
+  end
+end
 
+stacy = Human.new("Stacy")
 
-
-
-# class Human
-#   def initialize(name)
-#     @name = name
-#     puts "You can use .new to call the initialize method?! Thats wild"
-#     puts "You can reuse the initialize method name bc it's a specific sequence I guess"
-#   end
-#   def print_name
-#     @name
-#   end
-# end
-#
-# stacy = Human.new("Stacy")
-#
-# puts stacy.print_name
+puts stacy.print_name
 
 
 
