@@ -5,24 +5,34 @@
 
 # Example: Write code that uses the variables below to form a string that reads
 # "The Chudley Cannons are Ron's favorite Quidditch team":
+
+def new_line
+ puts "\n"
+end
+
+
 name = "Ron"
 team = "Chudley Cannons"
 
-puts "\n" "The #{team} are #{name}'s favorite Quidditch team"
+new_line
+puts "The #{team} are #{name}'s favorite Quidditch team"
 
 # Write code that uses the variables below to form a string that reads
 # "The quick red fox jumped over the lazy brown dog":
+
 speedy = "quick red fox"
 slow_poke = "lazy brown dog"
 
-puts "\n" "The #{speedy} jumped over the #{slow_poke}."
+new_line
+puts "The #{speedy} jumped over the #{slow_poke}."
 
 # Write code that uses the variables below to form a string that reads
 # "In a predictable result, the tortoise beat the hare!":
 slow_poke = "tortoise"
 speedy = "hare"
 
-puts "\n" "In a predictable result, the #{slow_poke} beat the #{speedy}!"
+new_line
+puts "In a predictable result, the #{slow_poke} beat the #{speedy}!"
 
 # YOU DO:
 # Declare three variables, name/content/data type of your choice. Think
@@ -37,5 +47,6 @@ courtesy = "wear a mask"
 
 isolation = "avoid large gatherings"
 
-puts "\n" "with the coronavirus pandemic the best way to protect yourself and
+new_line
+puts "with the coronavirus pandemic the best way to protect yourself and
 others is #{basic_hygeine}, #{courtesy}, and #{isolation}."

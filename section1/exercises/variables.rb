@@ -2,41 +2,45 @@
 # the desired result. To check your work, run this
 # file by entering the following command in your terminal:
 # `ruby section1/exercises/variables.rb`
+def new_line
+  puts "\n"
+end
 
 # Example: Write code that saves your name to a variable and
 # prints what that variable holds to the terminal:
 name = "Harry Potter"
-p name
+puts name
 
 # Write code that saves the string 'Dobby' to a variable and
 # prints what that variable holds to the terminal:
 house_elf = "Dobby"
-p house_elf
+puts house_elf
 
 # Write code that saves the string 'Harry Potter must not return to Hogwarts!'
 # and prints what that variable holds to the terminal:
-p "#{name} must not return to Hogwarts!"
+puts "#{name} must not return to Hogwarts!"
 
 # Write code that adds 2 to the `students` variable and
 # prints the result:
 
+new_line
 students = 22
-puts "we have #{students} students."
 
-puts "two students have entered the classroom." "\n"
+puts "We have #{students} students."
 
-puts " we have #{ students + 2 } students now."
-p
+puts "Two students have entered the classroom."
+
+puts "We have #{students + 2} students now."
+
 
 # Write code that subracts 2 from the `students` variable and
 # prints the result:
-puts "\n""the students escorted 2 students to the nurse's office."
 
-puts "\n\n"" we have #{ students - 2 } students now."
+puts "Those students escorted 2 other students to the nurse's office."
 
 students = students - 2
 
-p students
+puts "We have #{students} students now."
 
 # YOU DO:
 # Declare three variables, named `first_name`, `is_hungry` and `number_of_pets`.
@@ -47,11 +51,15 @@ first_name = "Roger"
 
 number_of_pets = "101 dalmations"
 
-is_hungry = "#{first_name}"
+is_hungry = false
 
-print "\n\n" "His name is #{first_name}. He looks after #{number_of_pets}.
-#{is_hungry} is fed and #{number_of_pets} are fed. #{first_name} must be doing
-something right."
+new_line
+puts "His name is #{first_name}."
+
+puts "He looks after #{number_of_pets}."
+
+puts "#{number_of_pets} are #{is_hungry == true ? 'hungry.' : 'not hungry.'}"
+
 
 
 # IN WORDS:
@@ -78,18 +86,22 @@ first_name = "Katy"
 
 number_of_pets = "half"
 
-is_hungry = "he is never hungry"
+is_hungry = false
 
-puts "\n\n""My name is #{first_name}. I have #{number_of_pets} a pet. I look after
-my pet rock, but #{is_hungry}. He is my rock."
+new_line
+puts "My name is #{first_name}."
+
+puts "My rock is #{number_of_pets}-pet-half-paperweight mix."
+
 
 
 # YOU DO:
 # Using the variables below, print the total number of snacks to the terminal:
-healthy_snacks = 6;
-junk_food_snacks = 8;
+healthy_snacks = 6
+junk_food_snacks = 8
 
-puts "\n\n""the total food in the cupboard is #{ healthy_snacks + junk_food_snacks }"
+new_line
+puts "The total food in the cupboard is #{healthy_snacks + junk_food_snacks}"
 
 #-------------------
 # FINAL CHECK
