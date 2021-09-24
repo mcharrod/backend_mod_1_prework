@@ -3,6 +3,9 @@
 # file by entering the following command in your terminal:
 # `ruby section2/exercises/methods.rb`
 
+def new_line
+  puts "\n"
+end
 # Example: Write a method that when called will print your name:
 def puts_name
   p "Severus Snape"
@@ -15,6 +18,7 @@ def print_name(name)
   puts "My name is #{name}."
 end
 
+new_line
 print_name("Katy")
 
 print_name("Albus Dumbledore")
@@ -26,6 +30,7 @@ def numsum(num1 , num2)
   puts "#{num1} + #{num2} is #{num1 + num2}"
 end
 
+new_line
 numsum(5 , 25)
 numsum(99 , 800)
 numsum(7 , 14)
@@ -39,6 +44,7 @@ def meet_greet(name1 , name2)
   puts "When #{name1} met #{name2}"
 end
 
+new_line
 meet_greet("Harry" , "Sally")
 meet_greet("Donna" , "The Doctor")
 meet_greet("Melissa" , "Rachel")
