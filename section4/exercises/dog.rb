@@ -5,9 +5,11 @@
 # pseudocoding problem solving:
 # declare method called play
 # if dog is hungry, puts hungry = true.
-# when dog plays, hungry = true. 
+# when dog plays, hungry = true.
 # make a behavior called play
 # once behavior has happened, dog = hungry
+
+
 
 
 
@@ -25,29 +27,35 @@ class Dog
   end
 
   def bark
-    p "woof!"
+    puts "woof!"
   end
 
   def eat
     @hungry = false
   end
 
-  def play
-    puts "#{name} plays fetch!"
-    @hungry = true
-    puts "did that make #{name} hungry?"
-    puts "hungry : #{@hungry}"
+  def hunger_meter
+    puts "#{name} is #{hungry == true ? 'hungry' : 'not hungry'}"
   end
 
-
+  def play
+    puts "#{name} plays fetch!"
+    hungry = true
+    puts hunger_meter
+  end
 end
 
-fido = Dog.new("Bernese", "Fido", 4)
-p fido.breed
-p fido.name
-p fido.age
-p fido.hungry
-fido.eat
-p fido.hungry
-p fido.play
-p fido.hungry
+sparky = Dog.new("Lab", "Sparky", 8)
+sparky.eat
+puts sparky.hunger_meter
+puts sparky.play
+
+# fido = Dog.new("Bernese", "Fido", 4)
+# p fido.breed
+# p fido.name
+# p fido.age
+# p fido.hungry
+# fido.eat
+# p fido.hungry
+# p fido.play
+# p fido.hungry
