@@ -9,15 +9,15 @@ p 1 === 2
 p 7 > 2
 
 # YOU DO: log to the console the result of "hello" is equal to "Hello":
-print "are Hello and hello typed the same?" "\n"
-p "hello" === "Hello"
+puts "are Hello and hello typed the same?"
+puts "hello" === "Hello"
 
 # YOU DO: log to the console the result of 3 is not equal to 4:
-print "does 3 equal 4?" "\n"
+puts "is 3 equal to 4?"
 
 puts 3 === 4
 
 # YOU DO: log to the console the result of 4 is less than or equal to 5:
-print "is 4 less than or equal to 5?" "\n"
+puts "is 4 less than (or equal) to 5?"
 
-print 4 <= 5
+puts 4 <= 5
