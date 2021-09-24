@@ -3,64 +3,59 @@
 # file by entering the following command in your terminal:
 # `ruby section3/exercises/hashes.rb`
 
-# Example: Write code that prints a hash holding grocery store inventory:
-foods = {apples: 23, grapes: 507, eggs: 48}
-puts foods
-
-new_foods = {
-'apples' => 23,
-'grapes' => 507,
-'eggs' => 48
-}
-
-new_foods.each do |food, amount|
-  puts "we have #{amount} #{food}"
+def new_line
+  puts "\n"
 end
+
+# Example: Write code that prints a hash holding grocery store inventory:
+foods = {apples: 40, grapes: 2, eggs: 9000}
+
+foods.each do |food, amount|
+  puts "The store has #{amount} #{food}"
+end
+new_line
 
 # Write code that prints a hash holding zoo animal inventory:
 zoo = {seals:5, tigers:4, monkeys:6, dragons:0}
-p zoo
 
-new_zoo = {
-  "seals" => 12,
-  "tigers" => 5,
-  "monkeys" => 8,
-  "Dragons" => 0
-}
-
-new_zoo.each do |animal, amount|
+zoo.each do |animal, amount|
   puts "The zoo has #{amount} #{animal}"
 end
+new_line
 
 # Write code that prints all of the 'keys' of the zoo variable
 # you created above:
-new_zoo.each do |animal, amount|
-  print animal
-end
 
-puts new_zoo["seals"]
+puts zoo.keys.join(", ")
+new_line
 
-puts "\n"
 # Write code that prints all of the 'values' of the zoo variable
 # you created above:
 
-new_zoo.each do |animal, amount|
-  puts  amount
-end
+puts zoo.values.join(", ")
+new_line
 
 # Write code that prints the value of the first animal of the zoo variable
 # you created above:
-puts new_zoo["seals"]
 
-puts "The zoo has: #{new_zoo["seals"]} seals"
+puts zoo[:seals]
+new_line
+
+puts "The zoo has #{zoo[:seals]} seals"
+new_line
 
 
 # Write code that adds an animal to the zoo hash.
 # Then, print the updated hash:
 
-new_zoo["Zebras"] = 15
+zoo[:zebras] = 15
 
-puts new_zoo
+
+zoo.each do |animal, amount|
+  print "#{amount} #{animal}, "
+end
+new_line
+new_line
 
 
 #-------------------
@@ -87,21 +82,28 @@ for March 32, 1999. Please fill out these attached forms prior to your visit.",
 
 # Write code that prints your email hash to the terminal.
 
-puts email
+email.each do|field, entry|
+  puts "#{field}: #{entry}"
+end
+new_line
 
 # Write code that prints all of the 'keys' of the email hash
 # you created above:
 # YOUR CODE HERE
 
+puts "fields:"
+new_line
 puts email.keys
+new_line
 
 # Write code that prints all of the 'values' of the email hash
 # you created above:
 # YOUR CODE HERE
 
-puts email.values
 
-puts email.values.join("\n\n ")
+puts "values:"
+new_line
+puts email.values
 #-------------------
 # Part 3: Many Emails - OPTIONAL EXTENSION
 #-------------------
@@ -110,27 +112,27 @@ puts email.values.join("\n\n ")
 # Now that we've learned about Objects AND Arrays, we can combine them.
 
 # Check out the following example of an array of Instagram posts:
-
-posts = [
- {
-   'image_src' => "./images/beach.png",
-   'caption' => "At the beach with my besties",
-   'timestamp' => "4:37 PM August 13, 2019",
-   'number_likes' => 0,
-   'comments' => []
- },
- {
-   'image_src' => "./images/holiday-party.png",
-   'caption' => "What a great holiday party omg",
-   'timestamp' => "11:37 PM December 31, 2019",
-   'number_likes' => 13,
-   'comments' => []
- }
-]
-
-puts posts
-puts posts[0]
-
+#
+# posts = [
+#  {
+#    'image_src' => "./images/beach.png",
+#    'caption' => "At the beach with my besties",
+#    'timestamp' => "4:37 PM August 13, 2019",
+#    'number_likes' => 0,
+#    'comments' => []
+#  },
+#  {
+#    'image_src' => "./images/holiday-party.png",
+#    'caption' => "What a great holiday party omg",
+#    'timestamp' => "11:37 PM December 31, 2019",
+#    'number_likes' => 13,
+#    'comments' => []
+#  }
+# ]
+#
+# puts posts
+# puts posts[0]
+#
 
 # posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"];
 
