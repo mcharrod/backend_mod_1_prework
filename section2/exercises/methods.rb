@@ -8,11 +8,11 @@ def puts_name
   p "Severus Snape"
 end
 
-print_name
+puts_name
 
 # Write a method that takes a name as an argument and prints it:
 def print_name(name)
-  puts "my name is #{name}."
+  puts "My name is #{name}."
 end
 
 print_name("Katy")

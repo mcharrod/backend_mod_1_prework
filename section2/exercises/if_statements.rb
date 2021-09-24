@@ -3,6 +3,10 @@
 # file by entering the following command in your terminal:
 # `ruby section2/exercises/if_statements.rb`
 
+def new_line
+  puts "\n"
+end
+
 # Example: Using the weather variable below, write code that decides
 # what you should take with you based on the following conditions:
   # if it is sunny, print "sunscreen"
@@ -13,15 +17,15 @@
   weather = 'rainy'
 
   if weather == 'sunny'
-    p "sunscreen"
+    puts "sunscreen"
   elsif weather == 'rainy'
-    p "umbrella"
+    puts "umbrella"
   elsif weather == 'snowy'
-    p "coat"
+    puts "coat"
   elsif weather == 'icy'
-    p "yak traks"
+    puts "yak traks"
   else
-    p "good to go!"
+    puts "good to go!"
   end
 
 # Experiment with manipulating the value held in variable 'weather'
@@ -41,9 +45,10 @@
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
 
+
 num_quarters = 1
 
-
+new_line
 if num_quarters >= 1
   puts "I have enough money for a gumball"
 elsif puts "I don't have enough money for a gumball."
@@ -67,6 +72,10 @@ end
 cups_of_flour = 5
 has_sauce = false
 
+# I want to include this text (it works) but the line is very long, what could I do??
+# puts "We have #{cups_of_flour} cups of flour and #{has_sauce == true ? 'some sauce' : 'no sauce'}. Can we make a pizza?"
+
+new_line
 if cups_of_flour >= 2 && has_sauce == true
   puts "I can make pizza"
 elsif puts "I cannot make pizza"
