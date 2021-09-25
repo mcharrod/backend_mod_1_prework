@@ -2,18 +2,6 @@
 # the dog hungry. Call that method below the class, and
 # print the dog's hunger status.
 
-# pseudocoding problem solving:
-# declare method called play
-# if dog is hungry, puts hungry = true.
-# when dog plays, hungry = true.
-# make a behavior called play
-# once behavior has happened, dog = hungry
-
-
-
-
-
-
 class Dog
   attr_reader :breed
 
@@ -49,13 +37,3 @@ sparky = Dog.new("Lab", "Sparky", 8)
 sparky.eat
 puts sparky.hunger_meter
 puts sparky.play
-
-# fido = Dog.new("Bernese", "Fido", 4)
-# p fido.breed
-# p fido.name
-# p fido.age
-# p fido.hungry
-# fido.eat
-# p fido.hungry
-# p fido.play
-# p fido.hungry
